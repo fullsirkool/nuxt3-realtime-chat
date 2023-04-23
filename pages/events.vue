@@ -5,7 +5,7 @@
 <script setup>
     const globalConfig = useRuntimeConfig()
     const title = ref('Event Page')
-    const FIRE_BASE_API_KEY = globalConfig.FIRE_BASE_API_KEY
+    const FIRE_BASE_API_KEY = globalConfig.public['FIRE_BASE_API_KEY']
 
     const getApiKey = computed(() => {
         return FIRE_BASE_API_KEY
