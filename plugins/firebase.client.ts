@@ -17,7 +17,6 @@ export default defineNuxtPlugin(nuxtApp => {
 
     const app = initializeApp(firebaseConfig)
 
-    const analytics = getAnalytics(app)
     const auth = getAuth(app)
     const firestore = getFirestore(app)
 
